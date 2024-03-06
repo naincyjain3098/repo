@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "183c5551-245a-4227-9f1f-5c9e3aa90093",
+		"name": "assignment-Java",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33199537"
+	},
+	"item": [
+		{
+			"name": "postCall-Purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/purchase?from=Jamnagar &to=Mumbai&userName=naincyjain&userEmail=naincyjain3098@gmail.com&pricePaid=501&seatNumber=3&section=A",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"purchase"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "Jamnagar "
+						},
+						{
+							"key": "to",
+							"value": "Mumbai"
+						},
+						{
+							"key": "userName",
+							"value": "naincyjain"
+						},
+						{
+							"key": "userEmail",
+							"value": "naincyjain3098@gmail.com"
+						},
+						{
+							"key": "pricePaid",
+							"value": "501"
+						},
+						{
+							"key": "seatNumber",
+							"value": "3"
+						},
+						{
+							"key": "section",
+							"value": "A"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/user/naincyjain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"user",
+						"naincyjain"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/remove/naincyjain",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"remove",
+						"naincyjain"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "modifySeat",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/modify-seat/naincyjain/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"modify-seat",
+						"naincyjain",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUserDetail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/tickets/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"tickets",
+						"all"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
